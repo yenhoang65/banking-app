@@ -1,4 +1,7 @@
 package com.example.banking_app.Exception;
 
-public class ErrorDetail {
+import java.time.LocalDateTime;
+
+public record ErrorDetail(LocalDateTime timestamp, String message, String details, String errorCode) {
+
 }
